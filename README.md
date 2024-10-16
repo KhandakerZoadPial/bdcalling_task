@@ -40,6 +40,7 @@ DB_PORT=3306
 
 
 DATABASES = {
+
     'default': {
 
         'ENGINE': 'django.db.backends.mysql',
@@ -48,8 +49,9 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST', default='localhost'),  
         'PORT': config('DB_PORT', default='3306'),    
-        
+
     }
+    
 }
 
 
