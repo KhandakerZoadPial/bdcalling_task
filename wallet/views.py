@@ -4,6 +4,11 @@ from django.contrib.auth.models import User
 from .models import Wallet, Transaction
 import json
 
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticated
+
+
+@permission_classes([IsAuthenticated])
 @csrf_exempt
 def add_funds(request):
     if request.method == 'POST':
