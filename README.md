@@ -36,7 +36,7 @@ DB_HOST=localhost
 DB_PORT=3306
 
 
-7. In settings.py:
+7. In settings.py change your database like:
 
 
 DATABASES = {
@@ -51,7 +51,7 @@ DATABASES = {
         'PORT': config('DB_PORT', default='3306'),    
 
     }
-    
+
 }
 
 
