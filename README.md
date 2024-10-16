@@ -38,6 +38,7 @@ DB_PORT=3306
 
 7. In settings.py:
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
