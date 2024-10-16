@@ -37,7 +37,7 @@ DB_PORT=3306
 
 
 
-9. In your virtual environment of your django project
+7. In your virtual environment of your django project
 
     Run: pip install mysqlclient
 
