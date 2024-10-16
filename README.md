@@ -36,7 +36,13 @@ DB_HOST=localhost
 DB_PORT=3306
 
 
-7. In settings.py change your database like:
+
+9. In your virtual environment of your django project
+
+    Run: pip install mysqlclient
+
+
+8. In settings.py change your database like:
 
 
 DATABASES = {
