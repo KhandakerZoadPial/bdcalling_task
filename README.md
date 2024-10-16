@@ -22,14 +22,20 @@ First of all- If you do not have mysql installed here is the link: https://dev.m
 6. Then add these fields:
 
 DB_NAME=your_database_name
+
 DB_USER=your_username
+
 DB_PASSWORD=your_password
+
 DB_HOST=localhost
+
 DB_PORT=3306
 
 
 7. In settings.py:
+
 DATABASES = {
+    
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': config('DB_NAME'),
