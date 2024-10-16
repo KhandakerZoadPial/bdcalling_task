@@ -5,6 +5,7 @@ First of all- If you do not have mysql installed here is the link: https://dev.m
 
 
 1. If on linux 
+
     run: sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 2. If on Windows
     You might need to install Visual Studio Build Tools or use pre-compiled binaries.
@@ -13,8 +14,11 @@ First of all- If you do not have mysql installed here is the link: https://dev.m
 3. Create a new database for your Django project:
     run: CREATE DATABASE your_database_name;
 4. Create user and give permissions:
+
     run: CREATE USER 'your_username'@'localhost' IDENTIFIED BY 'your_password';
+
     run: GRANT ALL PRIVILEGES ON your_database_name.* TO 'your_username'@'localhost';
+
     run: FLUSH PRIVILEGES;
 
 5. In the root directory of Django project (where manage.py is located), create a file named .env
@@ -35,7 +39,6 @@ DB_PORT=3306
 7. In settings.py:
 
 DATABASES = {
-    
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': config('DB_NAME'),
